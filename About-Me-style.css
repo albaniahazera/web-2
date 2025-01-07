@@ -1,0 +1,159 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: Arial, Georgia;
+}
+
+body {
+  align-items: center;
+  min-height: 100vh;
+  background: url(Assets/Images/background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  background: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  padding-right: 40px;
+}
+
+.img-navbar-1 {
+  width: 60px;
+  height: 60px;
+}
+
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+
+.navigation a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 80%;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.navigation a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.link-ig:hover {
+  background-color: #333;
+  color: rgb(255, 60, 0);
+}
+
+.link-yt:hover {
+  background-color: #333;
+  color: red;
+}
+
+.main {
+  flex: 1;
+}
+
+.text1 {
+  padding-top: 70px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: black;
+  font-family: Georgia;
+}
+
+.navbar {
+  background: rgba(230, 230, 230, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+
+.teks {
+  text-align: justify;
+  color: cyan;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.teks:hover {
+  color: black;
+}
+
+.hidden-text {
+  display: none;
+  text-align: justify;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: blue;
+}
+
+.link:hover {
+  color: red;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 2px;
+}
+
+.teksfooter {
+  color: black;
+  cursor: pointer;
+}
+
+.teksfooter:hover {
+  color: blue;
+}
+
+.tekslinkfooter {
+  align-items: center;
+  display: none;
+}
+
+.linkfooter {
+  text-decoration: none;
+  color: blue;
+}
+
+.linkfooter:hover {
+  color: red;
+}
